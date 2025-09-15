@@ -1,0 +1,17 @@
+{
+  "name": "designsystem-monorepo",
+  "private": true,
+  "packageManager": "pnpm@8",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "install": "pnpm install",
+    "dev": "pnpm -w -r --parallel dev",
+    "dev:web": "pnpm --filter web dev",
+    "build": "pnpm -w -r build",
+    "lint": "pnpm -w -r lint",
+    "format": "pnpm -w -r format"
+  }
+}
